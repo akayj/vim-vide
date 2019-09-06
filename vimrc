@@ -8,13 +8,9 @@
 
 autocmd BufNewFile *.lua,*.sh,*.php 0r !~/.vim/template.sh %:e
 autocmd BufRead,BufNewFile *.conf setfiletype conf
-autocmd BufRead *.php set includeexpr=substitute(v:fname,'\\\','/','g')
-autocmd BufRead *.php set include=^#\s*use
-autocmd BufRead *.php set suffixesadd+=.php
 autocmd BufWinEnter *.volt,*.tp,*.mako set filetype=html
 autocmd BufWinEnter *.sls set filetype=yaml
 autocmd GUIEnter * silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
-autocmd FileType php setlocal commentstring=//\ %s
 call system('mkdir -p ~/.vimtmp/undodir ~/.vimtmp/backupdir ~/.vimtmp/directory')
 colorscheme torte
 filetype on
@@ -91,7 +87,6 @@ set statusline+=%=%-14.(%l,%c%V%)\ %p%%
 "
 call plug#begin('~/.vim/plug')
 Plug 'airblade/vim-gitgutter'
-Plug 'alvan/vim-php-manual'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'godlygeek/tabular'
