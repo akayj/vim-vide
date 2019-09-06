@@ -3,6 +3,8 @@
 目录
 ===
 
+This repo is forked from bilibili/vim-vide original, but alternate some plugins and settings.
+
 <details>
 <summary>点击展开目录菜单</summary>
 
@@ -10,7 +12,6 @@
 
 * [交流群](#交流群)
     * [QQ交流群](#qq交流群)
-    * [Telegram](#telegram)
 * [Install (安装)](#install-安装)
 * [Uninstall (卸载)](#uninstall-卸载)
 * [Upgrade Plugins (升级插件)](#upgrade-plugins-升级插件)
