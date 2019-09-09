@@ -3,7 +3,7 @@
 目录
 ===
 
-This repo is forked from bilibili/vim-vide original, but alternate some plugins and settings.
+This repo is forked from bilibili/vim-vide originaly, but remove some plugins, add some settings.
 
 <details>
 <summary>点击展开目录菜单</summary>
