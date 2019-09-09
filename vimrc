@@ -116,7 +116,12 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 "
 let g:go_version_warning = 0
 let g:go_fmt_autosave = 1
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "goreturns"
+let g:go_fmt_options = {
+\ 'gofmt': '-s',
+\ 'goimports': '-local git.ppdaicorp.com',
+\ 'goreturns': '-local git.ppdaicorp.com',
+\ }
 
 "
 " NERDTree
