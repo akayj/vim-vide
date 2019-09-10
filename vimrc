@@ -96,8 +96,13 @@ Plug 'plasticboy/vim-markdown'
 Plug 'roxma/vim-paste-easy'
 Plug 'scrooloose/nerdtree'
 Plug 'tmhedberg/matchit'
-Plug 'tpope/vim-commentary'
+
+" Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdcommenter'
+
 Plug 'vim-syntastic/syntastic'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 let g:vim_markdown_folding_disabled = 1
@@ -116,7 +121,7 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 "
 let g:go_version_warning = 0
 let g:go_fmt_autosave = 1
-let g:go_fmt_command = "goreturns"
+let g:go_fmt_command = "goimports"
 let g:go_fmt_options = {
 \ 'gofmt': '-s',
 \ 'goimports': '-local git.ppdaicorp.com',
@@ -183,3 +188,35 @@ let g:ctrlp_mruf_default_order = 1
 let g:timeStampFormat = '170101'
 let g:timeStampString = '%y%m%d'
 let g:timeStampLeader = 'version'
+
+"
+" white-spaces
+"
+let g:strip_whitespace_confirm=0
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+
+"
+" autopair
+"
+let g:AutoPairsFlyMode = 1
+
+"
+" nerdcommenter
+"
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+" let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
