@@ -97,8 +97,8 @@ Plug 'roxma/vim-paste-easy'
 Plug 'scrooloose/nerdtree'
 Plug 'tmhedberg/matchit'
 
-" Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
+" Plug 'scrooloose/nerdcommenter'
 
 Plug 'vim-syntastic/syntastic'
 Plug 'ntpeters/vim-better-whitespace'
