@@ -103,6 +103,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'jiangmiao/auto-pairs'
+
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 let g:vim_markdown_folding_disabled = 1
