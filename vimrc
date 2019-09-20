@@ -97,14 +97,14 @@ Plug 'roxma/vim-paste-easy'
 Plug 'scrooloose/nerdtree'
 Plug 'tmhedberg/matchit'
 
-" Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
+" Plug 'scrooloose/nerdcommenter'
 
 Plug 'vim-syntastic/syntastic'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'jiangmiao/auto-pairs'
-
 Plug 'rust-lang/rust.vim'
+Plug 'posva/vim-vue'
 call plug#end()
 
 let g:vim_markdown_folding_disabled = 1
